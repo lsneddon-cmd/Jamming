@@ -1,4 +1,4 @@
-import './SearchBar.css';
+import "./SearchBar.css";
 import React from "react";
 
 export const SearchBar = () => {
@@ -9,4 +9,3 @@ export const SearchBar = () => {
     </div>
   );
 };
-
