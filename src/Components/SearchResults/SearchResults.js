@@ -1,6 +1,6 @@
 import "./SearchResults.css";
 import React from "react";
-import { TrackList } from "./TrackList/TrackList";
+import { TrackList } from "../TrackList/TrackList";
 
 export const SearchResults = () => {
   return (

@@ -1,14 +1,18 @@
-import "Track.css";
+import "./Track.css";
 import React from "react";
 
-export const Track = () => {
+const renderAction = (props) => {
+  return props.isRemoval ? '-' : '+';
+}
+
+export const Track = (props) => {
   return (
-    <div class="Track">
-      <div class="Track-information">
-        {/* <h3><!-- track name will go here --></h3>
-    <p><!-- track artist will go here--> | <!-- track album will go here --></p> */}
+    <div className="Track">
+      <div className="Track-information">
+        <h3>{props.data.title}</h3>
+        <p> {props.data.artist} | {props.data.album}</p>
       </div>
-      {/* <button class="Track-action"><!-- + or - will go here --></button> */}
+      <button className="Track-action">{renderAction(props.data)}</button>
     </div>
   );
 };
