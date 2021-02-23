@@ -28,7 +28,8 @@ class App extends Component {
           album: "Beethoven Symphonies",
           id: 3
         }
-      ]
+      ],
+      exampleData: "hey there"
     }
   }
 
@@ -42,7 +43,10 @@ class App extends Component {
         <div class="App">
           <SearchBar />
           <div class="App-playlist">
-            <SearchResults searchResults={this.state.searchResults} />
+            <SearchResults 
+              searchResults={this.state.searchResults} 
+              data={this.state.exampleData}
+            />
             <Playlist />
           </div>
         </div>

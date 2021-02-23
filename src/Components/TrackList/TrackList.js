@@ -29,6 +29,7 @@ const mapTracksToTrack = (track) => {
       title={track.title} 
       artist={track.artist}
       album={track.album}
+      key={track.id}
     />
   )
 }
@@ -37,6 +38,7 @@ export const TrackList = (props) => {
   return (
     <div className="TrackList">
       {hardCodedTracks.map(mapTracksToTrack)}
+      <Track stuff={props.data} />
     </div>
   );
 }
